@@ -33,24 +33,24 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity top_module_v2  is
 Port (
-            clk:        in std_logic;
-            rst:        in std_logic;
+            clk:		in std_logic;
+            rst:		in std_logic;
             
-            led_o:      out std_logic;
+            led_o:		out std_logic;
             
-            adc_act:     in std_logic;
-            ssm_mclk : out std_logic;
-            ssm_bclk : out std_logic;
-            ssm_pblrc : out std_logic;
-            ssm_pbdat : out std_logic;
-            ssm_reclrc : out std_logic;
-            ssm_recdat : in std_logic;
-            ssm_muten : out std_logic;
+            adc_act:		in std_logic;
+            ssm_mclk :		out std_logic;
+            ssm_bclk :		out std_logic;
+            ssm_pblrc :		out std_logic;
+            ssm_pbdat :		out std_logic;
+            ssm_reclrc :	out std_logic;
+            ssm_recdat :	in std_logic;
+            ssm_muten :		out std_logic;
             
-            t_note:     out std_logic_vector( 1 downto 0 );
+            t_note:		out std_logic_vector( 1 downto 0 );
                 
-                ssm_scl:        inout std_logic;
-                ssm_sda:        inout std_logic
+            ssm_scl:		inout std_logic;
+            ssm_sda:		inout std_logic
  );
 end top_module_v2; 
 
