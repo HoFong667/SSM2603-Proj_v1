@@ -31,7 +31,7 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity top_module_v2 is
+entity top_module_v2  is
 Port (
             clk:        in std_logic;
             rst:        in std_logic;
@@ -52,9 +52,9 @@ Port (
                 ssm_scl:        inout std_logic;
                 ssm_sda:        inout std_logic
  );
-end top_module_v2 
+end top_module_v2; 
 
-architecture Behavioral of top_module_v2 is
+architecture Behavioral of top_module_v2  is
 
     constant iic_addr:                  std_logic_vector( 7 downto 0 ) := "00110100";                   -- addr 0011 010 + wr 0
 
